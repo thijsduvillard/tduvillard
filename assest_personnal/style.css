@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #e3d3d3;
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-top: 10px;
+}
+
+.bluesubtitle {
+    margin-top: 50px;
+    color: #2a6c8d;
+    font-size: 2em; 
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Distribute the buttons/panels evenly */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between the buttons/panels */
+    margin-top: 30px; /* Add some margin from the top */
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the button and panel in each item */
+    width: 300px;
+}
+
+.button {
+    background-color: #bd5757;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.panel {
+    background-color: #bd5757;
+    color: white;
+    width: 100%; /* Ensure it takes full width of its container */
+    display: none; /* Hidden by default */
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Animation for sliding panel */
+.slide-down {
+    animation: slideDown 0.1s forwards;
+}
+
+.slide-up {
+    animation: slideUp 0.1s forwards;
+}
+
+
+.linkpanel {
+    width: 200px;
+    height: 40px;
+    background-color: #bd5757;
+    color: white;
+    padding: 10px;
+    margin: 180px;
+    border-radius: 12px; /* Soft angle with rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for depth */
+    
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    gap: 10px; /* Space between the logo and the text */
+    text-align: center;
+}
+
+.linkpanel img {
+    width: 20px; /* Adjust size of the logo */
+    height: 20px;
+}
+
+
+
+@keyframes slideDown {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        height: auto;
+        opacity: 1;
+    }
+    to {
+        height: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+
+iframe {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
