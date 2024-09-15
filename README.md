@@ -1,1 +1,1 @@
-My personnal website : https://thijsduvillard.github.io/personnal.html
+My personnal website : https://tduvillard.github.io/personnal.html
