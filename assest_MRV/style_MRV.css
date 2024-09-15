@@ -14,6 +14,7 @@ body {
     width: 100%; /* Full width by default */
     max-width: 210mm; /* Max width for A4 paper */
     height: auto; /* Height adapts to content */
+    max-height: 400mm;
     padding: 20mm; /* Padding around content */
     background-color: white; /* Background color for the container */
     border: 1px solid #ccc; /* Optional: Border around the container */
