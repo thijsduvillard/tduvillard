@@ -4,31 +4,42 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center the A4 container horizontally */
+    justify-content: center; /* Center the A4 container vertically */
     min-height: 100vh;
-    
-    
+    background-color: #f4f4f4; /* Optional: Background color for the whole page */
+}
+
+.container {
+    width: 210mm; /* Width of A4 paper */
+    height: 297mm; /* Height of A4 paper */
+    padding: 20mm; /* Padding around content */
+    background-color: white; /* Background color for the A4 content area */
+    border: 1px solid #ccc; /* Optional: Border around the A4 content area */
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
 }
 
 header, footer {
     background-color: #f4f4f4;
     text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
+    padding: 10mm; /* Adjusted padding to match A4 scale */
+    border-bottom: 1px solid #ccc; /* Border at the bottom of the header */
+}
+
+footer {
+    border-top: 1px solid #ccc; /* Border at the top of the footer */
 }
 
 main {
     flex: 1;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ccc;
+    padding: 10mm; /* Adjusted padding to match A4 scale */
     text-align: justify;
 }
 
 main p {
-        text-indent: 30px;  /* This indents the first line of each paragraph */
-        margin-bottom: 20px;  /* This adds space between paragraphs */
-    }
-    
+    text-indent: 7mm;  /* Adjusted text indent for A4 scale */
+    margin-bottom: 10mm;  /* Adjusted margin for spacing between paragraphs */
+}
 
 a {
     text-decoration: none;
