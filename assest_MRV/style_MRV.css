@@ -11,14 +11,13 @@ body {
 }
 
 .container {
-    width: 100%; /* Default to full width */
+    width: 100%; /* Full width by default */
     max-width: 210mm; /* Max width for A4 paper */
-    height: auto; /* Height adjusts to content */
-    max-height: auto; /* Max Height adjusts to content */
+    height: auto; /* Height adapts to content */
     padding: 20mm; /* Padding around content */
     background-color: white; /* Background color for the container */
     border: 1px solid #ccc; /* Optional: Border around the container */
-    box-sizing: border-box; /* Include padding and border in the width and height */
+    box-sizing: border-box; /* Include padding and border in the width */
 }
 
 header, footer {
@@ -55,9 +54,7 @@ a:hover {
 @media (max-width: 210mm) {
     .container {
         width: 90%; /* Adapt container width to fit smaller screens */
-        height: auto; /* Height will adjust to content */
         max-width: none; /* Remove max-width restriction */
-        max-height: none; /* Remove max-height restriction */
         padding: 5%; /* Adjust padding for smaller screens */
     }
 }
