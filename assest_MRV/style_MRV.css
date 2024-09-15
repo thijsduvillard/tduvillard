@@ -4,25 +4,27 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the A4 container horizontally */
-    justify-content: center; /* Center the A4 container vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
     min-height: 100vh;
     background-color: #f4f4f4; /* Optional: Background color for the whole page */
 }
 
 .container {
-    width: 210mm; /* Width of A4 paper */
-    height: 297mm; /* Height of A4 paper */
+    width: 100%; /* Default to full width */
+    max-width: 210mm; /* Max width for A4 paper */
+    height: auto; /* Height adjusts to content */
+    max-height: 297mm; /* Max height for A4 paper */
     padding: 20mm; /* Padding around content */
-    background-color: white; /* Background color for the A4 content area */
-    border: 1px solid #ccc; /* Optional: Border around the A4 content area */
-    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+    background-color: white; /* Background color for the container */
+    border: 1px solid #ccc; /* Optional: Border around the container */
+    box-sizing: border-box; /* Include padding and border in the width and height */
 }
 
 header, footer {
     background-color: #f4f4f4;
     text-align: center;
-    padding: 10mm; /* Adjusted padding to match A4 scale */
+    padding: 10mm; /* Padding for header and footer */
     border-bottom: 1px solid #ccc; /* Border at the bottom of the header */
 }
 
@@ -31,14 +33,13 @@ footer {
 }
 
 main {
-    flex: 1;
-    padding: 10mm; /* Adjusted padding to match A4 scale */
+    padding: 10mm; /* Padding for main content */
     text-align: justify;
 }
 
 main p {
-    text-indent: 7mm;  /* Adjusted text indent for A4 scale */
-    margin-bottom: 10mm;  /* Adjusted margin for spacing between paragraphs */
+    text-indent: 7mm;  /* Indent for paragraphs */
+    margin-bottom: 10mm;  /* Margin between paragraphs */
 }
 
 a {
@@ -48,4 +49,15 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 210mm) {
+    .container {
+        width: 90%; /* Adapt container width to fit smaller screens */
+        height: auto; /* Height will adjust to content */
+        max-width: none; /* Remove max-width restriction */
+        max-height: none; /* Remove max-height restriction */
+        padding: 5%; /* Adjust padding for smaller screens */
+    }
 }
