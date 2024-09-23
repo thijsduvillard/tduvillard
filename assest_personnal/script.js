@@ -18,7 +18,7 @@ buttonCV.addEventListener('click', () => {
         // Slide up CV panel
         panelCV.classList.remove('slide-down');
         panelCV.classList.add('slide-up');
-        setTimeout(() => { panelCV.style.display = 'none'; }, 500);
+        setTimeout(() => { panelCV.style.display = 'none'; }, 10);
     } else {
         // Slide down CV panel
         panelCV.style.display = 'block';
@@ -34,7 +34,7 @@ buttonMaster.addEventListener('click', () => {
         // Slide up Master panel
         panelMaster.classList.remove('slide-down');
         panelMaster.classList.add('slide-up');
-        setTimeout(() => { panelMaster.style.display = 'none'; }, 500);
+        setTimeout(() => { panelMaster.style.display = 'none'; }, 10);
     } else {
         // Slide down Master panel
         panelMaster.style.display = 'block';
@@ -50,7 +50,7 @@ buttonReference.addEventListener('click', () => {
         // Slide up Master panel
         panelReference.classList.remove('slide-down');
         panelReference.classList.add('slide-up');
-        setTimeout(() => { panelReference.style.display = 'none'; }, 500);
+        setTimeout(() => { panelReference.style.display = 'none'; }, 10);
     } else {
         // Slide down Master panel
         panelReference.style.display = 'block';
