@@ -60,7 +60,7 @@ body {
 .panel {
     background-color: #bd5757;
     color: white;
-    width: 100%; /* Ensure it takes full width of its container */
+    width: 8.5cm; /* Ensure it takes full width of its container */
     display: none; /* Hidden by default */
     padding: 20px;
     margin-top: 10px;
@@ -85,7 +85,7 @@ body {
     background-color: #bd5757;
     color: white;
     padding: 10px;
-    margin: 180px;
+    margin: 10px;
     border-radius: 12px; /* Soft angle with rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for depth */
     
@@ -96,11 +96,43 @@ body {
     text-align: center;
 }
 
-.linkpanel img {
-    width: 20px; /* Adjust size of the logo */
-    height: 20px;
-}
 
+  .linkpanel img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contactpart {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    text-align: center; /* Center the contact text */
+  }
+
+  .contact-title {
+    font-weight: bold;
+    margin-top: 100px;
+    font-size: 1.2em;
+    margin-bottom: 8px; /* Space between title and email addresses */
+  }
+
+  .contact-title i {
+    color: #2a6c8d;
+    margin-right: 8px;
+  }
+
+  .contact {
+    margin-bottom: 5px; /* Space between the email sections */
+  }
+
+  .contact a {
+    color: #2a6c8d;
+    text-decoration: none;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+  }
 
 
 @keyframes slideDown {
